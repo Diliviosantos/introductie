@@ -11,8 +11,12 @@ jobs:
     permissions: 
       contents: read 
       pages: write 
-      id-token: write 
+      id-token: write
+    env:
+      RUN_ID: 15086694326  # Hier voeg je de run ID toe als variabele
     steps:
       - uses: actions/checkout@v3
+      - name: Show run ID
+        run: echo "De run ID is $RUN_ID"
       - uses: actions/deploy-pages@v2
 
