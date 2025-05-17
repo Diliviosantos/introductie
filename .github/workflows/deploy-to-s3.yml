@@ -19,4 +19,4 @@ jobs:
 
       - name: Sync files to S3
         run: |
-          aws s3 sync ./introductie/ s3://jouw-unieke-bucket-naam/ --delete
+          aws s3 sync ./introductie/ s3://introductie-pagina-dilivio/ --delete
